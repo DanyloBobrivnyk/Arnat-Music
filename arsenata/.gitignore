@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/webstorm,nextjs,rider,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=webstorm,nextjs,rider,node
+# Created by https://www.toptal.com/developers/gitignore/api/yarn,webstorm,rider,node,nextjs
+# Edit at https://www.toptal.com/developers/gitignore?templates=yarn,webstorm,rider,node,nextjs
 
 ### NextJS ###
 # dependencies
@@ -334,4 +334,21 @@ fabric.properties
 # https://plugins.jetbrains.com/plugin/8053-azure-toolkit-for-intellij
 .idea/**/azureSettings.xml
 
-# End of https://www.toptal.com/developers/gitignore/api/webstorm,nextjs,rider,node
+### yarn ###
+# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+
+.yarn/*
+!.yarn/releases
+!.yarn/patches
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# if you are NOT using Zero-installs, then:
+# comment the following lines
+!.yarn/cache
+
+# and uncomment the following lines
+# .pnp.*
+
+# End of https://www.toptal.com/developers/gitignore/api/yarn,webstorm,rider,node,nextjs
