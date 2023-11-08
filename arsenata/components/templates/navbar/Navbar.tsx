@@ -86,11 +86,11 @@ const Navbar = () => {
                                                 className="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500"
                                             >
                                                 {item.name}
-                                                {item.badge && (
-                                                    <span className="ml-2 rounded bg-blue-100 px-2 py-0.5 text-xs font-semibold text-blue-600 dark:bg-cyan-200 dark:text-blue-800 ">
-                                                      {item.badge}
-                                                    </span>
-                                                )}
+                                                {/*{item.badge && (*/}
+                                                {/*    <span className="ml-2 rounded bg-blue-100 px-2 py-0.5 text-xs font-semibold text-blue-600 dark:bg-cyan-200 dark:text-blue-800 ">*/}
+                                                {/*      {item.badge}*/}
+                                                {/*    </span>*/}
+                                                {/*)}*/}
                                             </Link>
                                         ))}
                                     </div>
