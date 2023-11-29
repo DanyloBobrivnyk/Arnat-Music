@@ -9,7 +9,6 @@ export default function Home() {
     return (
         <main className="overflow-hidden">
             <Container>
-                <h1>Hello world</h1>
                 <ArticleTileGrid articles={arr}></ArticleTileGrid>
             </Container>
         </main>
