@@ -1,4 +1,4 @@
-import React, {HTMLProps} from "react";
+import React from "react";
 import Link from "next/link";
 import Picture from "@/public/musician.png";
 import Image from "next/image";
@@ -6,12 +6,14 @@ import {twMerge} from "tailwind-merge";
 import Container from "@/components/shared/container/Container";
 import Label from "@/components/shared/Label";
 
-interface ArticleTileProps extends HTMLProps<HTMLDivElement> {
-    article: string | null | undefined;
+interface ArticleTileProps {
+    image: string | null | undefined,
+    tag: string | null | undefined,
+    title: string | null | undefined,
 }
 
-const ArticleTile = ({article, className}: ArticleTileProps) => {
-    // const { title } = article;
+const ArticleTile = ({ ...props }: ArticleTileProps) => {
+    const { title, tag, image } = props;
     // const inspectorProps = useContentfulInspectorMode({ entryId: article.sys.id });
 
     return (
@@ -25,7 +27,7 @@ const ArticleTile = ({article, className}: ArticleTileProps) => {
                         "relative block",
                         "aspect-square"
                     )}
-                    href={'#'}>
+                    href={`albums/${title}`}>
                     {
                         <Image
                             src={Picture}
@@ -38,7 +40,7 @@ const ArticleTile = ({article, className}: ArticleTileProps) => {
                 </Link>
             </div>
             <div className="mx-auto max-w-screen-md ">
-                <div className="flex justify-center">
+                <div className="flex justify-left">
                     <div className="flex gap-3">
                         <Link href={'#'}>
                             <Label content={'LIFESTYLE'}/>
@@ -47,7 +49,7 @@ const ArticleTile = ({article, className}: ArticleTileProps) => {
                 </div>
 
                 <h1 className="text-brand-primary mb-3 mt-2 text-left text-1xl font-semibold tracking-tight lg:text-2xl lg:leading-snug">
-                    { article }
+                    { title }
                 </h1>
 
                 <div className="mt-3 flex justify-left space-x-3 text-gray-500 ">

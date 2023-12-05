@@ -16,7 +16,7 @@ const ArticleTileGrid = ({articles, className, ...props} : ArticleTileGridProps)
             {...props}
         >
             {articles.map((article, index) => {
-                return article ? <ArticleTile key={index} article={article} /> : null;
+                return article ? <ArticleTile key={index} title={article} /> : null;
             })}
         </div>
     ) : null;

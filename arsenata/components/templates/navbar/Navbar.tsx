@@ -10,14 +10,12 @@ import Image from "next/image";
 const Navbar = () => {
 
     const rightMenu = [
-        { name: 'Albums', href: '#', },
-        { name: 'Youtube', href: 'https://youtube.com', badge: "new"},
+        { name: 'Youtube', href: 'https://www.youtube.com/@beduin5620', badge: "new"},
         { name: 'Donate', href: '#'}
     ]
 
     const leftMenu = [
-        { name: 'Home', href: '#'},
-        { name: 'About', href: '#'},
+        { name: 'Home', href: '../'},
         { name: 'Contact', href: '/contact'},
     ];
 
@@ -69,13 +67,15 @@ const Navbar = () => {
                                     </div>
                                 </div>
                                 <div className="flex flex-shrink-0 items-center">
-                                    <Image
-                                        className="h-8 w-auto"
-                                        width={50}
-                                        height={50}
-                                        src={Logo}
-                                        alt="Your Company"
-                                    />
+                                    <Link href={"../"}>
+                                        <Image
+                                            className="h-8 w-auto"
+                                            width={50}
+                                            height={50}
+                                            src={Logo}
+                                            alt="Your Company"
+                                        />
+                                    </Link>
                                 </div>
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
