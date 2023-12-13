@@ -12,9 +12,9 @@ interface ArticleTileProps {
     title: string | null | undefined,
 }
 
-const ArticleTile = ({ ...props }: ArticleTileProps) => {
+const AlbumTile = ({ ...props }: ArticleTileProps) => {
     const { title, tag, image } = props;
-    // const inspectorProps = useContentfulInspectorMode({ entryId: article.sys.id });
+    // const inspectorProps = useContentfulInspectorMode({ entryId: album.sys.id });
 
     return (
         <Container className="!pt-0">
@@ -81,4 +81,4 @@ const ArticleTile = ({ ...props }: ArticleTileProps) => {
     );
 };
 
-export default ArticleTile;
+export default AlbumTile;

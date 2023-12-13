@@ -1,12 +1,12 @@
 import React, {HTMLProps} from "react";
 import {twMerge} from "tailwind-merge";
-import ArticleTile from "@/components/features/article/ArticleTile";
+import AlbumTile from "@/components/features/album/AlbumTile";
 
 interface ArticleTileGridProps extends HTMLProps<HTMLDivElement> {
     articles?: Array<string | null>;
 }
 
-const ArticleTileGrid = ({articles, className, ...props} : ArticleTileGridProps) => {
+const AlbumTileGrid = ({articles, className, ...props} : ArticleTileGridProps) => {
     return articles && articles.length > 0 ? (
         <div
             className={twMerge(
@@ -16,10 +16,10 @@ const ArticleTileGrid = ({articles, className, ...props} : ArticleTileGridProps)
             {...props}
         >
             {articles.map((article, index) => {
-                return article ? <ArticleTile title={article} /> : null;
+                return article ? <AlbumTile title={article} /> : null;
             })}
         </div>
     ) : null;
 }
 
-export default ArticleTileGrid;
+export default AlbumTileGrid;

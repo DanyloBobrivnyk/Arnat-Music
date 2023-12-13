@@ -15,7 +15,7 @@ const includedFeatures = [
     'Original music',
 ]
 
-const ArticleContent = () => {
+const AlbumContent = () => {
     return (
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl pb-4 pb-5 lg:pb-8 sm:text-center">
@@ -80,4 +80,4 @@ const ArticleContent = () => {
     )
 }
 
-export default ArticleContent;
+export default AlbumContent;

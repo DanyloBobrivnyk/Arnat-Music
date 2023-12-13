@@ -1,12 +1,12 @@
 import Container from "@/components/shared/container/Container";
 import React from "react";
-import ArticleContent from "@/components/features/article/ArticleContent";
+import AlbumContent from "@/components/features/album/AlbumContent";
 
 export default function AlbumPage() {
     return (
         <main className="overflow-hidden">
             <Container>
-                <ArticleContent></ArticleContent>
+                <AlbumContent></AlbumContent>
             </Container>
         </main>
     )
