@@ -1,6 +1,5 @@
 import Container from "@/components/shared/container/Container";
 import AlbumTileGrid from "@/components/features/album/AlbumTileGrid";
-import MyNewComponent from "@/components/MyNewComponent";
 
 export default function HomePage() {
     let arr = ['The Power of Mindfulness: Achieving Inner Peace and Clarity'
@@ -10,8 +9,7 @@ export default function HomePage() {
     return (
         <main className="overflow-hidden">
             <Container>
-                {/*<AlbumTileGrid articles={arr}></AlbumTileGrid>*/}
-                <MyNewComponent></MyNewComponent>
+                <AlbumTileGrid articles={arr}></AlbumTileGrid>
             </Container>
         </main>
     )

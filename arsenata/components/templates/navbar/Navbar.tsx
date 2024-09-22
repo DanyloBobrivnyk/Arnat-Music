@@ -1,4 +1,4 @@
-"use client";
+    "use client";
 
 import React from "react";
 import Logo from '@/public/logo.svg';
@@ -11,7 +11,7 @@ const Navbar = () => {
 
     const rightMenu = [
         { name: 'Youtube', href: 'https://www.youtube.com/@beduin5620', badge: "new"},
-        { name: 'Donate', href: '#'}
+        { name: 'Heatmap', href: '/heatmap'}
     ]
 
     const leftMenu = [
